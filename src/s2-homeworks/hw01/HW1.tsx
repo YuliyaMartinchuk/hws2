@@ -34,7 +34,7 @@ export const message0: MessageType = {
         name: 'Harry Johnson',  // можно менять
     },
     message: {
-        text: 'Hello', // можно менять
+        text: 'What are your plans for the holiday this year, Roman?', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -45,7 +45,7 @@ export const friendMessage0: MessageType = {
         name: 'Thomas Davies', // можно менять
     },
     message: {
-        text: 'Hello! (зеркальное сообщение для тренировки css)', // можно менять
+        text: 'I don`t know yet. Last year I went to Gagra in Caucasus. It is a beautiful resort in Abkhazia. It is situated on the coast of the Black Sea not far from Sochi. The weather is usually fine and the water in the sea is warm there from Mai till November. The summer season is the warmest time of the year.', // можно менять
         time: '22:05', // можно менять
     },
 }

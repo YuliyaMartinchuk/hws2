@@ -40,14 +40,13 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType):Ar
     // return affairs // need to fix
     switch (filter) {
         case "high":
-            return affairs.filter(t=>t.priority === "high")
+            return affairs.filter(t=>t.priority === filter)
         case "middle":
-            return affairs.filter(t=>t.priority === "middle")
+            return affairs.filter(t=>t.priority === filter)
         case "low":
-            return affairs.filter(t=>t.priority === "low")
-
+            return affairs.filter(t=>t.priority === filter)
         default:
-            return defaultAffairs
+            return affairs
     }
 }
 

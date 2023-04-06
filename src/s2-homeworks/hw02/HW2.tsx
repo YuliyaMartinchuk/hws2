@@ -52,9 +52,9 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType):Ar
 }
 
 
-export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
-
-    return affairs // need to fix
+export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
+    return affairs.filter(t => t._id !== _id)
+    // return affairs // need to fix
 }
 
 function HW2() {

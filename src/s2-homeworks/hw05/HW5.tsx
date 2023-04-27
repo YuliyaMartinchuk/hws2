@@ -9,6 +9,7 @@ import Pages from './Pages'
 * 3 - застилизовать хэдэр и сайдбар в соответствии с дизайном
 * */
 
+
 function HW5() {
     return (
         <HashRouter>

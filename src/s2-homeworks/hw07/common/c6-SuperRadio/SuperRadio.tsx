@@ -35,7 +35,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
     ...restProps
 }) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // делают студенты
+        onChangeOption?.(Number(e.currentTarget.value)) // делают студенты
     }
 
     const finalRadioClassName = s.radio + (className ? ' ' + className : '')
@@ -48,6 +48,14 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
                       id={id + '-input-' + o.id}
                       className={finalRadioClassName}
                       type={'radio'}
+                      name={"radioName"} //Уникальное имя поля. Используется для получения значений на сервере.
+                      //Обязательным атрибутом является name, значением которого является имя.
+                      // Данное имя должно быть одинаковым у всей группы радиокнопок.
+                      // Без этого атрибута будет возможно выбрать все значения сразу, так как браузер не будет
+                      // видеть связи между ними
+                      value={o.id} //Значение внутри поля
+                      checked={o.id===value} //Используется для полей с типом checkbox и radio. Если указан данный атрибут, то поле будет отмечено.
+
                       // name, checked, value делают студенты
 
                       onChange={onChangeCallback}

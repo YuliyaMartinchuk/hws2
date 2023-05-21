@@ -1,23 +1,51 @@
 .item {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem;
 }
 
 .item:last-of-type {
 }
 
 .users {
+    display: grid;
+
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.7rem;
 }
 
 .container {
+    font-family: Roboto, serif;
+    max-width: 38em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+
 }
 
 .thead {
+    background-color: #E5E5E5;
+    padding: 0.85em 1.15em;
+    font-weight: bold;
+}
+
+.thead tr {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
 }
 
 .nameCol {
+
+
 }
 
 .ageCol {
+    font-weight: bold;
 }
+

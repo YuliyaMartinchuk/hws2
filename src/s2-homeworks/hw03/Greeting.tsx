@@ -1,7 +1,5 @@
 import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
-import user from "../hw08/User";
-import {UserType} from "./HW3";
 import {Simulate} from "react-dom/test-utils";
 import input = Simulate.input;
 

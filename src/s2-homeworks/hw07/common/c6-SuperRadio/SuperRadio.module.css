@@ -15,9 +15,7 @@
     border: 2px solid #fff;
     transform: translate(-50%, 20%);
 
-
 }
-
 
 .radio:checked::before {
     border-color: #000;

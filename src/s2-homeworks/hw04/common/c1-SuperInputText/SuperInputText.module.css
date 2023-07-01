@@ -28,6 +28,11 @@
 }
 
 .superInput {
+
+}
+
+.superInput:focus {
+    border: #0066CC solid 1px;
 }
 
 .errorInput {

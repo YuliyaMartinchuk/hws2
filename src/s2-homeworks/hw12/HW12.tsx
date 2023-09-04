@@ -14,7 +14,7 @@ import {AppStoreType} from "../hw10/bll/store";
 * */
 export type themesType = {
     id: number
-    value:string
+    value:string|number
 }
 
 
